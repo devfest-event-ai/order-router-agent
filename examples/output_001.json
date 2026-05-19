@@ -1,0 +1,9 @@
+{
+  "product_name": "Celengan",
+  "quantity": 2,
+  "price": 500,
+  "city": "Tangerang",
+  "customer_name": "Budi",
+  "phone": "08123456789",
+  "payment_method": "COD"
+}
