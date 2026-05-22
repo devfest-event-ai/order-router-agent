@@ -1,0 +1,182 @@
+[
+  {
+    "messy_input": "Subject: Order ORD_0020188\nHalo, saya mau pesan 1 unit Produk. Kirim ke KAB. SUMEDANG, JAWA BARAT. Pembayaran via COD (Bayar di Tempat). Terima kasih.",
+    "ground_truth": {
+      "order_id": "ORD_0020188",
+      "quantity": 1,
+      "city": "KAB. SUMEDANG",
+      "province": "JAWA BARAT",
+      "payment_method": "COD (Bayar di Tempat)",
+      "total_amount": 9000.0,
+      "status": "Selesai"
+    }
+  },
+  {
+    "messy_input": "Order: ORD_0007564 | Produk x1 | Ship: KOTA BEKASI | Pay: Saldo ShopeePay | Total: 21700",
+    "ground_truth": {
+      "order_id": "ORD_0007564",
+      "quantity": 1,
+      "city": "KOTA BEKASI",
+      "province": "JAWA BARAT",
+      "payment_method": "Saldo ShopeePay",
+      "total_amount": 21700.0,
+      "status": "Selesai"
+    }
+  },
+  {
+    "messy_input": "Subject: Order ORD_0011413\nHalo, saya mau pesan 1 unit Produk. Kirim ke KOTA PALEMBANG, SUMATERA SELATAN. Pembayaran via COD (Bayar di Tempat). Terima kasih.",
+    "ground_truth": {
+      "order_id": "ORD_0011413",
+      "quantity": 1,
+      "city": "KOTA PALEMBANG",
+      "province": "SUMATERA SELATAN",
+      "payment_method": "COD (Bayar di Tempat)",
+      "total_amount": 0.0,
+      "status": "Batal"
+    }
+  },
+  {
+    "messy_input": "Order: ORD_0004580 | Produk x1 | Ship: KAB. PURWAKARTA | Pay: Online Payment | Total: 5000",
+    "ground_truth": {
+      "order_id": "ORD_0004580",
+      "quantity": 1,
+      "city": "KAB. PURWAKARTA",
+      "province": "JAWA BARAT",
+      "payment_method": "Online Payment",
+      "total_amount": 5000.0,
+      "status": "Selesai"
+    }
+  },
+  {
+    "messy_input": "Mau order 1 Produk, kirim ke KOTA TANGERANG SELATAN, BANTEN. Bayar Saldo ShopeePay. Urgent!",
+    "ground_truth": {
+      "order_id": "ORD_0006670",
+      "quantity": 1,
+      "city": "KOTA TANGERANG SELATAN",
+      "province": "BANTEN",
+      "payment_method": "Saldo ShopeePay",
+      "total_amount": 27400.0,
+      "status": "Selesai"
+    }
+  },
+  {
+    "messy_input": "Mau order 1 Produk, kirim ke KAB. BOYOLALI, JAWA TENGAH. Bayar SPayLater. Urgent!",
+    "ground_truth": {
+      "order_id": "ORD_0016693",
+      "quantity": 1,
+      "city": "KAB. BOYOLALI",
+      "province": "JAWA TENGAH",
+      "payment_method": "SPayLater",
+      "total_amount": 0.0,
+      "status": "Batal"
+    }
+  },
+  {
+    "messy_input": "Order: ORD_0006533 | Produk x1 | Ship: KOTA TANGERANG SELATAN | Pay: COD (Bayar di Tempat) | Total: 10880",
+    "ground_truth": {
+      "order_id": "ORD_0006533",
+      "quantity": 1,
+      "city": "KOTA TANGERANG SELATAN",
+      "province": "BANTEN",
+      "payment_method": "COD (Bayar di Tempat)",
+      "total_amount": 10880.0,
+      "status": "Selesai"
+    }
+  },
+  {
+    "messy_input": "Subject: Order ORD_0005971\nHalo, saya mau pesan 1 unit Produk. Kirim ke KAB. MERANGIN, JAMBI. Pembayaran via COD (Bayar di Tempat). Terima kasih.",
+    "ground_truth": {
+      "order_id": "ORD_0005971",
+      "quantity": 1,
+      "city": "KAB. MERANGIN",
+      "province": "JAMBI",
+      "payment_method": "COD (Bayar di Tempat)",
+      "total_amount": 143130.0,
+      "status": "Selesai"
+    }
+  },
+  {
+    "messy_input": "Mau order 1 Produk, kirim ke KAB. CIREBON, JAWA BARAT. Bayar COD (Bayar di Tempat). Urgent!",
+    "ground_truth": {
+      "order_id": "ORD_0015233",
+      "quantity": 1,
+      "city": "KAB. CIREBON",
+      "province": "JAWA BARAT",
+      "payment_method": "COD (Bayar di Tempat)",
+      "total_amount": 6500.0,
+      "status": "Selesai"
+    }
+  },
+  {
+    "messy_input": "Mau order 1 Produk, kirim ke KOTA TANGERANG, BANTEN. Bayar SeaBank Bayar Instan. Urgent!",
+    "ground_truth": {
+      "order_id": "ORD_0007216",
+      "quantity": 1,
+      "city": "KOTA TANGERANG",
+      "province": "BANTEN",
+      "payment_method": "SeaBank Bayar Instan",
+      "total_amount": 6000.0,
+      "status": "Selesai"
+    }
+  },
+  {
+    "messy_input": "Mau order 2 Produk, kirim ke KAB. MOROWALI, SULAWESI TENGAH. Bayar COD (Bayar di Tempat). Urgent!",
+    "ground_truth": {
+      "order_id": "ORD_0005976",
+      "quantity": 2,
+      "city": "KAB. MOROWALI",
+      "province": "SULAWESI TENGAH",
+      "payment_method": "COD (Bayar di Tempat)",
+      "total_amount": 0.0,
+      "status": "Batal"
+    }
+  },
+  {
+    "messy_input": "Mau order 1 Produk, kirim ke KAB. BANDUNG BARAT, JAWA BARAT. Bayar COD (Bayar di Tempat). Urgent!",
+    "ground_truth": {
+      "order_id": "ORD_0004033",
+      "quantity": 1,
+      "city": "KAB. BANDUNG BARAT",
+      "province": "JAWA BARAT",
+      "payment_method": "COD (Bayar di Tempat)",
+      "total_amount": 18576.0,
+      "status": "Selesai"
+    }
+  },
+  {
+    "messy_input": "Order: ORD_0006544 | Produk x1 | Ship: KOTA JAKARTA TIMUR | Pay: Saldo ShopeePay | Total: 10487",
+    "ground_truth": {
+      "order_id": "ORD_0006544",
+      "quantity": 1,
+      "city": "KOTA JAKARTA TIMUR",
+      "province": "DKI JAKARTA",
+      "payment_method": "Saldo ShopeePay",
+      "total_amount": 10487.0,
+      "status": "Selesai"
+    }
+  },
+  {
+    "messy_input": "Mau order 1 Produk, kirim ke KOTA TANGERANG, BANTEN. Bayar Online Payment. Urgent!",
+    "ground_truth": {
+      "order_id": "ORD_0016905",
+      "quantity": 1,
+      "city": "KOTA TANGERANG",
+      "province": "BANTEN",
+      "payment_method": "Online Payment",
+      "total_amount": 18900.0,
+      "status": "Selesai"
+    }
+  },
+  {
+    "messy_input": "Subject: Order ORD_0007714\nHalo, saya mau pesan 1 unit Produk. Kirim ke KAB. BANJAR, KALIMANTAN SELATAN. Pembayaran via COD (Bayar di Tempat). Terima kasih.",
+    "ground_truth": {
+      "order_id": "ORD_0007714",
+      "quantity": 1,
+      "city": "KAB. BANJAR",
+      "province": "KALIMANTAN SELATAN",
+      "payment_method": "COD (Bayar di Tempat)",
+      "total_amount": 0.0,
+      "status": "Batal"
+    }
+  }
+]

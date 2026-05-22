@@ -50,7 +50,8 @@ class Customer(BaseModel):
 class OrderItem(BaseModel):
     product_name: str = Field(..., min_length=1, max_length=200)
     quantity: int = Field(..., ge=1, le=256, description="Max 256 units based on dataset")
-    unit_price: float = Field(..., ge=0, le=10_000_000)
+    #unit_price: float = Field(..., ge=0, le=10_000_000)
+    unit_price: float = Field(..., ge=0, le=100_000_000)  # Max 100 juta (untuk laptop/high-end items)
 
 class ShippingAddress(BaseModel):
     city: str = Field(..., min_length=2, description="City/Kabupaten")
@@ -60,11 +61,17 @@ class ShippingAddress(BaseModel):
     @field_validator('province')
     @classmethod
     def validate_province(cls, v: str) -> str:
+    # All 34 Indonesian provinces
         valid_provinces = [
-            'DKI JAKARTA', 'JAWA BARAT', 'JAWA TENGAH', 'JAWA TIMUR', 
-            'BANTEN', 'SUMATERA UTARA', 'SUMATERA BARAT', 'SUMATERA SELATAN',
-            'KALIMANTAN BARAT', 'KALIMANTAN TENGAH', 'SULAWESI SELATAN',
-            'BALI', 'DI YOGYAKARTA', 'MALUKU UTARA', 'KEPULAUAN RIAU'
+            'ACEH', 'SUMATERA UTARA', 'SUMATERA BARAT', 'RIAU', 'JAMBI',
+            'SUMATERA SELATAN', 'BENGKULU', 'LAMPUNG', 'KEPULAUAN BANGKA BELITUNG',
+            'KEPULAUAN RIAU', 'DKI JAKARTA', 'JAWA BARAT', 'JAWA TENGAH',
+            'DI YOGYAKARTA', 'JAWA TIMUR', 'BANTEN', 'BALI', 'NUSA TENGGARA BARAT',
+            'NUSA TENGGARA TIMUR', 'KALIMANTAN BARAT', 'KALIMANTAN TENGAH',
+            'KALIMANTAN SELATAN', 'KALIMANTAN TIMUR', 'KALIMANTAN UTARA',
+            'SULAWESI UTARA', 'SULAWESI TENGAH', 'SULAWESI SELATAN',
+            'SULAWESI TENGGARA', 'GORONTALO', 'SULAWESI BARAT', 'MALUKU',
+            'MALUKU UTARA', 'PAPUA', 'PAPUA BARAT'
         ]
         if v.upper() not in valid_provinces:
             raise ValueError(f'Invalid province: {v}')
